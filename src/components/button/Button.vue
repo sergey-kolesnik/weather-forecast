@@ -4,7 +4,11 @@
 
 <template>
     <button class="button">
-        Кнопка
+        <div>
+            <slot name="icon">
+            </slot>
+        </div>
+        <slot></slot>
     </button>
     
     
