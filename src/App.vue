@@ -4,7 +4,12 @@ import Button from "./components/button/Button.vue"
 
 <template>
   <div>
-    <Button></Button>
+    <Button>
+      <template #icon>
+        +
+      </template>
+      Сохранить
+    </Button>
   </div>
 </template>
 
