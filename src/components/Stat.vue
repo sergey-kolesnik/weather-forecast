@@ -1,13 +1,19 @@
 <script setup>
+const { label, stat } = defineProps(
+    {
+        label: String,
+        stat: String,
+    }
+)
 </script>
 
 <template>
     <div class="stat">
         <div class="stat__name">
-            Влажность            
+            {{ label }}            
         </div>
         <div class="stat__value">
-            90%
+            {{ stat }}
         </div>
     </div>
 </template>
