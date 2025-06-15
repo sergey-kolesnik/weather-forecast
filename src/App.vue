@@ -1,10 +1,13 @@
 <script setup>
-import Button from "./components/Button.vue";
 import Stat from "./components/Stat.vue";
-import IconLocation from "./icons/IconLocation.vue";
+import CitySelect from "./components/CitySelect.vue"
 const data = {
   label: "Влфжность",
   stat: "90%",
+}
+
+function getCity(city) {
+  console.log(city)
 }
 </script>
 
@@ -14,11 +17,7 @@ const data = {
     </Stat>
     <Stat label="Влажность" stat="90%">
     </Stat>
-
-    <Button>
-      <IconLocation></IconLocation>
-      Сохранить
-    </Button>
+    <CitySelect @select-city="getCity"></CitySelect>
   </main>
 </template>
 

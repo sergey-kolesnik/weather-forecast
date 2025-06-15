@@ -1,12 +1,14 @@
 <script setup>
-
+    defineOptions({
+        inheritAttras: false,
+    })
 </script>
 
 <template>
     <button class="button">
         <div>
             <slot name="icon">
-            </slot>
+            </slot>    
         </div>
         <slot></slot>
     </button>
@@ -25,6 +27,9 @@
         font-weight: 600;
         color: var(--primary);
         cursor: pointer;
+        display: flex;
+        gap: 9px;
+        align-items: center;
     }
 
     .button:hover {

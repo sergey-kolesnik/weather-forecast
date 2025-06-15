@@ -27,6 +27,7 @@ const { label, stat } = defineProps(
     .stat__name {
         font-weight: 700;
         font-size: 28px;
+        text-transform: uppercase;
     }
 
     .stat__value {
